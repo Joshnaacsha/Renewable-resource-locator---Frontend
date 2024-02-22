@@ -1,3 +1,10 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,46 @@ body {
   display: grid;
   place-items: center;
   overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Change the background color as needed */
+  color: white;
+  padding: 0.5rem 2rem; /* Adjusted padding for a more compact header */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+header .logo {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Change the color on hover as needed */
 }
 
 main {
@@ -115,85 +162,14 @@ main {
   transform: translateX(-50%);
   z-index: 5;
   user-select: none;
-
-  & .btn {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(0, 0, 0, 0.6);
-    margin: 0 0.25rem;
-    padding: 0.75rem;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-  }
 }
 
-@media (width > 650px) and (width < 900px) {
-  .content {
-    & .title {
-      font-size: 1rem;
-    }
-    & .description {
-      font-size: 0.7rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
-  }
-  .item {
-    width: 160px;
-    height: 270px;
-
-    &:nth-child(3) {
-      left: 50%;
-    }
-    &:nth-child(4) {
-      left: calc(50% + 170px);
-    }
-    &:nth-child(5) {
-      left: calc(50% + 340px);
-    }
-    &:nth-child(6) {
-      left: calc(50% + 510px);
-      opacity: 0;
-    }
-  }
+.nav .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba
 }
-
-@media (width < 650px) {
-  .content {
-    & .title {
-      font-size: 0.9rem;
-    }
-    & .description {
-      font-size: 0.65rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
-  }
-  .item {
-    width: 130px;
-    height: 220px;
-
-    &:nth-child(3) {
-      left: 50%;
-    }
-    &:nth-child(4) {
-      left: calc(50% + 140px);
-    }
-    &:nth-child(5) {
-      left: calc(50% + 280px);
-    }
-    &:nth-child(6) {
-      left: calc(50% + 420px);
-      opacity: 0;
-    }
-  }
-}
+/* Existing CSS code goes here */
 
 #registration-form {
   position: fixed;
@@ -250,3 +226,61 @@ main {
 #company-form button:hover {
   background-color: #0056b3; /* Darker blue color on hover */
 }
+
+#company-form button {
+  width: 100%;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#company-form button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+.nav .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  margin: 0 0.25rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.nav .btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+header {
+  display: flex;
+  justify-content: space-between; /* Ensures logo is on the left and nav on the right */
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: auto; /* Pushes the logo to the left, aligning it with the start of the header */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
