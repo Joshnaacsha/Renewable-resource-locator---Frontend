@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - Vortex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between; /* Ensures logo is on the left and nav on the right */
+        align-items: center;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Change the background color as needed */
+        color: white;
+        z-index: 1000; /* Adjust the z-index as needed */
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        margin-right: auto; /* Pushes the logo to the left, aligning it with the start of the header */
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease; /* Add smooth transition for color change */
+      }
+
+      nav ul li a:hover {
+        color: #ffd700; /* Change the color on hover as needed */
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      p {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://tse3.mm.bing.net/th?id=OIP.d0peDQqLtRgTrbBf72zcpAHaFj&pid=Api&P=0&h=180"
+          alt=""
+          style="width: 100px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Information - VORTEX</h2>
+      <br />
+      <p>
+        If you have any queries or need assistance, you can contact us at the
+        following number:
+      </p>
+      <br />
+      <p>Contact Number: +1 123 456 7890</p>
+      <br />
+      <h2>Our Office</h2>
+      <p>Vortex Headquarters</p>
+      <p>123 Renewable Street</p>
+      <p>Sustainable City, Earth</p>
+      <br />
+      <h2>Email</h2>
+      <p>Email: info@vortexenergy.com</p>
+    </main>
+  </body>
+</html>
